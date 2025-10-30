@@ -3,34 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости - 6 Школа, г. Актау</title>
+    <title>Новости - 6 Школа, Актау</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Эмблема школы" class="logo">
-        <h1>6 Школа, г. Актау</h1>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Эмблема школы" class="logo">
+            <h1>6 Школа, г. Актау</h1>
+        </div>
         <nav>
-            <a href="index.html">Главная</a>
-            <a href="news.html">Новости</a>
-            <a href="contacts.html">Контакты</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <button class="nav-toggle">☰</button>
         </nav>
     </header>
 
     <main>
-        <h2>Новости</h2>
-        <article>
-            <h3>1 сентября — День знаний</h3>
-            <p>В нашей школе прошли торжественные линейки и открытые уроки для учеников всех классов.</p>
-        </article>
-        <article>
-            <h3>Олимпиада по математике</h3>
-            <p>Ученики нашей школы заняли призовые места на городской олимпиаде по математике.</p>
-        </article>
+        <section class="news-section">
+            <h2>Последние новости</h2>
+            <div class="news-cards">
+                <div class="news-card">
+                    <h3>Спортивный турнир</h3>
+                    <p>В школе прошел спортивный турнир среди учеников 7-9 классов.</p>
+                </div>
+                <div class="news-card">
+                    <h3>Выставка рисунков</h3>
+                    <p>Ученики продемонстрировали свои художественные работы на выставке.</p>
+                </div>
+                <div class="news-card">
+                    <h3>День открытых дверей</h3>
+                    <p>Приглашаем родителей и будущих учеников на День открытых дверей 10 ноября.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 6 Школа, г. Актау</p>
+        <p>© 2025 6 Школа, г. Актау | Адрес: Актау, 6 микрорайон, 6 школа</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
