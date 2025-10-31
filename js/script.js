@@ -1,6 +1,6 @@
-const toggleButton = document.querySelector('.nav-toggle');
+const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+navToggle.addEventListener('click', () => {
+  navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 });
