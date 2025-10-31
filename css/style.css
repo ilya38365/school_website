@@ -91,6 +91,14 @@ section {
   margin-bottom: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 section h2 {
@@ -107,7 +115,36 @@ footer {
 }
 
 /* === 📱 Мобильная адаптация === */
-@media (max-wid
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    background-color: #006be0;
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .nav-links.show {
+    max-height: 300px;
+    opacity: 1;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 12px 18px;
+    border-bottom:
 
 
         
